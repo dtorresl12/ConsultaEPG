@@ -3,9 +3,9 @@ from langchain.sql_database import SQLDatabase
 db = SQLDatabase.from_uri("sqlite:///PerfilDemo.db")
 
 # 2. Importar las APIs
-import a_env_vars
-import os
-os.environ["OPENAI_API_KEY"] = a_env_vars.OPENAI_API_KEY
+# import a_env_vars
+# import os
+# os.environ["OPENAI_API_KEY"] = a_env_vars.OPENAI_API_KEY
 
 # 3. Crear el LLM
 from langchain_openai import ChatOpenAI
